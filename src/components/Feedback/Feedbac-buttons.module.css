@@ -1,0 +1,19 @@
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons > button {
+  min-width: 100px;
+  min-height: 32px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: aqua;
+}
+
+.buttons > button:hover,
+.buttons > button:focus {
+  background: #04cece;
+}
