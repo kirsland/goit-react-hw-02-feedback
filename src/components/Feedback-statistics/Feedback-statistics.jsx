@@ -2,12 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Feedback-statistics.module.css';
 
-import NotificationMessage from './Notification-message';
-
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
-  return total === 0 ? (
-    <NotificationMessage message="There is no feedback" />
-  ) : (
+  return (
     <div className={css.statistics}>
       <p>Good: {good}</p>
       <p>Neutral: {neutral}</p>
